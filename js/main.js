@@ -18,7 +18,7 @@ if (menuToggle) {
 // GSAP — progressive enhancement
 if (typeof gsap !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
-    document.querySelectorAll(".reveal").forEach(el => el.classList.add("animate"));
+    
 
     // Scroll reveal animations
     function animateIfExists(selector, options = {}) {
