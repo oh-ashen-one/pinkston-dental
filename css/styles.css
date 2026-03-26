@@ -426,9 +426,11 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .reveal,
-    .reveal.animate,
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
     }
+}
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
